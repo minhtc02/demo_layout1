@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">demo_layout1</string>
+    <string name="photo_collage">Photo Collage</string>
+    <string name="welcome_to_photo_collage">Welcome to Photo Collage!</string>
+    <string name="you_can_choose_the_best_collages_fill_them_with_your_photos_and_decorate_them_with_filters_stickers_text_and_more">You can choose the best collages, fill them with your photos, and decorate them with filters, stickers, text, and more.</string>
+    <string name="i_have_read_and_understood_the_privacy_policy_and_terms_of_service">I have read and understood the Privacy Policy and Terms of Service.</string>
+    <string name="let_s_start">Let\'s Start</string>
+    <string name="ads">Ads</string>
+    <string name="recommendations_just_for_you">Recommendations just for you</string>
+    <string name="grids">Grids</string>
+    <string name="top_trending_templates">Top trending templates</string>
+    <string name="all">All</string>
+    <string name="favourites">Favourites</string>
+    <string name="selfies">Selfies</string>
+    <string name="meme">Meme</string>
+    <string name="food">Food</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_1_6_photos">Select 1-6 photos</string>
+    <string name="template">Template</string>
+    <string name="next">Next</string>
+</resources>
