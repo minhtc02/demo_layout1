@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.demo_layout1.App;
 import com.example.demo_layout1.R;
 import com.example.demo_layout1.databinding.ActivityPermissionBinding;
+import com.example.demo_layout1.help.SharePref;
 
 public class PermissionActivity extends AppCompatActivity {
     ActivityPermissionBinding binding;
@@ -33,7 +34,8 @@ public class PermissionActivity extends AppCompatActivity {
             }
         });
         binding.btnStart.setOnClickListener(v -> {
-            App.sharePref.setIsConfirm(true);
+            SharePref sharePref = new SharePref(this);
+            sharePref.setIsConfirm(true);
             Intent intent = new Intent(PermissionActivity.this, HomeActivity.class);
             startActivity(intent);
         });

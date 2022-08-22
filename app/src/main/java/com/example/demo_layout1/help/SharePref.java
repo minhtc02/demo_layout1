@@ -2,6 +2,9 @@ package com.example.demo_layout1.help;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.util.Log;
+
+import com.example.demo_layout1.R;
 
 public class SharePref {
     SharedPreferences preferences;
@@ -9,8 +12,8 @@ public class SharePref {
     private final String IS_CONFIRM = "isConFirm";
 
     public SharePref(Context context) {
-        preferences = context.getSharedPreferences("MyPREFERENCES", Context.MODE_PRIVATE);
-        this.editor = preferences.edit();
+        this.preferences = context.getSharedPreferences(IS_CONFIRM, Context.MODE_PRIVATE);
+        this.editor = this.preferences.edit();
     }
 
     public void setIsConfirm(boolean isConfirm) {
@@ -19,6 +22,7 @@ public class SharePref {
     }
 
     public boolean getIsConfirm() {
+        Log.d("AAA", "pref "+ preferences);
         return preferences.getBoolean(IS_CONFIRM, false);
     }
 }
